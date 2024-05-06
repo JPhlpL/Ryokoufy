@@ -26,3 +26,23 @@
 <script src="{{ URL::asset('js/isotope.pkgd.min.js')}}"></script>
 {{--  --}}
 <script src="{{ URL::asset('js/main.js')}}"></script>
+{{--  --}}
+<script src="{{ URL::asset('js/sweetalert.js')}}"></script>
+{{-- Sweetalert function --}}
+<script>
+
+    $('a.btn-modal').click(function(e){
+    e.preventDefault(); // Prevent the default action (navigation) of the click
+    var value = $(this).attr('value'); // Get the value attribute of the clicked link
+    // Open a SweetAlert with the value
+    Swal.fire({
+        title: "Sweet!",
+        text: "Modal with a custom image." + value,
+        imageUrl: "https://unsplash.it/400/200",
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: "Custom image"
+    });
+});
+
+</script>

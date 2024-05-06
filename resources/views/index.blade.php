@@ -73,25 +73,31 @@
 
                 <div class="filters-content">
                     <div class="row grid">
-                        <div class="single-portfolio col-sm-4 all north">
-                            <div class="item">
-                                <img src="{{ URL::asset('img/main/sapporo.jpg')}}" alt="Sapporo">
-                                <div class="p-inner">
-                                    <h4>Sapporo</a></h4>
-                                    <div class="cat">Hokkaido (North)</div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="single-portfolio col-sm-4 all east">
-                            <div class="item">
-                                <img src="{{ URL::asset('img/main/tokyo.jpg')}}" alt="tokyo">
-                                <div class="p-inner">
-                                    <h4>Tokyo</h4>
-                                    <div class="cat">Kanto (East)</div>
+                        <a href="#" class="text-dark btn-modal"value="Sapporo">
+                            <div class="single-portfolio col-sm-4 all north">
+                                <div class="item">
+                                    <img src="{{ URL::asset('img/main/sapporo.jpg')}}" alt="Sapporo">
+                                    <div class="p-inner">
+                                        <h4>Sapporo</a></h4>
+                                        <div class="cat">Hokkaido (North)</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+
+                        <a href="#" class="text-dark btn-modal"value="tokyo">
+                            <div class="single-portfolio col-sm-4 all east">
+                                <div class="item">
+                                    <img src="{{ URL::asset('img/main/tokyo.jpg')}}" alt="tokyo">
+                                    <div class="p-inner">
+                                        <h4>Tokyo</h4>
+                                        <div class="cat">Kanto (East)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
                         <div class="single-portfolio col-sm-4 all east">
                             <div class="item">
                                 <img src="{{ URL::asset('img/main/yokohama.jpg')}}" alt="yokohama">
@@ -208,10 +214,9 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="single-review">
-                            <img src="img/c1.png" alt="">
                             <div class="title d-flex flex-row">
                                 <a href="#">
-                                    <h4>Fannie Rowe</h4>
+                                    <h4>John Doe</h4>
                                 </a>
                                 <div class="star">
                                     <span class="fa fa-star checked"></span>
@@ -226,7 +231,6 @@
                             </p>
                         </div>
                         <div class="single-review">
-                            <img src="img/c3.png" alt="">
                             <div class="title d-flex flex-row">
                                 <a href="#">
                                     <h4>Lillie Summers</h4>
@@ -246,7 +250,6 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="single-review">
-                            <img src="img/c2.png" alt="">
                             <div class="title d-flex flex-row">
                                 <a href="#">
                                     <h4>Bob Marley</h4>
@@ -264,7 +267,6 @@
                             </p>
                         </div>
                         <div class="single-review">
-                            <img src="img/c4.png" alt="">
                             <div class="title d-flex flex-row">
                                 <a href="#">
                                     <h4>Jackie Chan</h4>

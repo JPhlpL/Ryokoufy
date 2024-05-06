@@ -8,7 +8,7 @@ runme:
 
 Ryokoufy, a best web application designs to give travel information of Japan for our foreign tourists. This is very useful for the first time travels in Japan.
 
-It is also well strutured application that uses a <b>Laravel</b> for robust backend framework and <b>Vue.js</b> for a solid frontend.
+It is also well strutured application that uses a Laravel for robust backend framework and Vue.js for a solid frontend.
 
 **The design consists of:**
 
