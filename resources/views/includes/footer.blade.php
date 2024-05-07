@@ -1,3 +1,6 @@
+<script>
+    var base_path = "{{ url('/') }}"
+</script>
 {{--  --}}
 <script src="{{ URL::asset('js/vendor/jquery-2.2.4.min.js')}}"></script>
 {{--  --}}
@@ -31,18 +34,43 @@
 {{-- Sweetalert function --}}
 <script>
 
-    $('a.btn-modal').click(function(e){
-    e.preventDefault(); // Prevent the default action (navigation) of the click
-    var value = $(this).attr('value'); // Get the value attribute of the clicked link
-    // Open a SweetAlert with the value
-    Swal.fire({
-        title: "Sweet!",
-        text: "Modal with a custom image." + value,
-        imageUrl: "https://unsplash.it/400/200",
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: "Custom image"
+$('a.btn-modal').click(function(e) {
+    e.preventDefault();
+    var place = $(this).attr('value');
+
+    $.ajax({
+        url: base_path + '/getInfo/' + place,
+        type: 'GET',
+        success: function(data) {
+            // Display data in a modal
+            Swal.fire({
+                title: place,
+                html: `
+
+
+                    <ul class="text-left">
+                        <li>Geo Data:</li>
+                        <li>Latitude: ${data.latitude}</li>
+                        <li>Longitude: ${data.longitude}</li>
+                        <li>Place: ${data.place}</li>
+                        <li>Timezone: ${data.timezone}</li>
+                    </ul>
+                    <br>
+                    <ul class="text-left">
+                        <li>Weather Condition: </li>
+                        <li>Temperature: ${data.temperature}°C </li>
+                        <li>Humidity: ${data.humidity}% </li>
+                        <li>Wind Speed: ${data.wind_speed} m/s </li>
+                    </ul>
+                `,
+                imageUrl: "https://unsplash.it/400/200",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image"
+            });
+        }
     });
 });
+
 
 </script>

@@ -2640,3 +2640,11 @@ h6 {
     height: 200px; /* set a fixed height */
     object-fit: cover; /* scale the image to cover the entire container */
   }
+
+.single-portfolio{
+    margin-top: 25px;
+}
+
+.text-left {
+    text-align: left;
+}

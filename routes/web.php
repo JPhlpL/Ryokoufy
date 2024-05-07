@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WeatherController; // Update the controller import
+use App\Http\Controllers\InfoController; // Update the controller import
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/getWeather', [App\Http\Controllers\WeatherController::class, 'getWeather']);
+Route::get('/getInfo/{place}', [InfoController::class, 'getInfo']);

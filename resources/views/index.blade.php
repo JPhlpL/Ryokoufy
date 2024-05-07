@@ -74,68 +74,104 @@
                 <div class="filters-content">
                     <div class="row grid">
 
-                        <a href="#" class="text-dark btn-modal"value="Sapporo">
+                        <a href="#" class="text-dark btn-modal" value="Sapporo">
                             <div class="single-portfolio col-sm-4 all north">
-                                <div class="item">
-                                    <img src="{{ URL::asset('img/main/sapporo.jpg')}}" alt="Sapporo">
-                                    <div class="p-inner">
-                                        <h4>Sapporo</a></h4>
-                                        <div class="cat">Hokkaido (North)</div>
+                                <div class="card">
+                                    <div class="item">
+                                        <img src="{{ URL::asset('img/main/sapporo.jpg')}}" alt="Sapporo">
+                                        <div class="p-inner">
+                                            <h4>Sapporo</a></h4>
+                                            <div class="cat">Hokkaido (North)</div>
+                                            {{-- <article class="widget">
+                                                <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+                                                <div class="weatherInfo">
+                                                  <div class="temperature"><span>25&deg;</span></div>
+                                                  <div class="description">
+                                                    <div class="weatherCondition">CLOUDY</div>
+                                                    <div class="place">New York, New York</div>
+                                                  </div>
+                                                </div>
+                                                <div class="date">1st Jan</div>
+                                            </article> --}}
+                                        </div>
+
                                     </div>
+                                    {{--  --}}
+
+
                                 </div>
                             </div>
                         </a>
 
-                        <a href="#" class="text-dark btn-modal"value="tokyo">
+                        <a href="#" class="text-dark btn-modal"value="Tokyo">
                             <div class="single-portfolio col-sm-4 all east">
-                                <div class="item">
-                                    <img src="{{ URL::asset('img/main/tokyo.jpg')}}" alt="tokyo">
-                                    <div class="p-inner">
-                                        <h4>Tokyo</h4>
-                                        <div class="cat">Kanto (East)</div>
+                                <div class="card">
+                                    <div class="item">
+                                        <img src="{{ URL::asset('img/main/tokyo.jpg')}}" alt="tokyo">
+                                        <div class="p-inner">
+                                            <h4>Tokyo</h4>
+                                            <div class="cat">Kanto (East)</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <div class="single-portfolio col-sm-4 all east">
-                            <div class="item">
-                                <img src="{{ URL::asset('img/main/yokohama.jpg')}}" alt="yokohama">
-                                <div class="p-inner">
-                                    <h5>Yokohama</h5>
-                                    <div class="cat">Kanto (East)</div>
+                        <a href="#" class="text-dark btn-modal"value="Yokohama">
+                            <div class="single-portfolio col-sm-4 all east">
+                                <div class="card">
+                                    <div class="item">
+                                        <img src="{{ URL::asset('img/main/yokohama.jpg')}}" alt="yokohama">
+                                        <div class="p-inner">
+                                            <h5>Yokohama</h5>
+                                            <div class="cat">Kanto (East)</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all central">
-                            <div class="item">
-                                <img src="{{ URL::asset('img/main/nagoya.jpg')}}" alt="Nagoya">
-                                <div class="p-inner">
-                                    <h5>Nagoya</h5>
-                                    <div class="cat">Chubu (Central)</div>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
 
-                        <div class="single-portfolio col-sm-4 all south-central">
-                            <div class="item">
-                                <img src="{{ URL::asset('img/main/kyoto.jpg')}}" alt="Kyoto">
-                                <div class="p-inner">
-                                    <h4>Kyoto</h4>
-                                    <div class="cat">Kinki (South-Central)</div>
+                        <a href="#" class="text-dark btn-modal"value="Nagoya">
+                            <div class="single-portfolio col-sm-4 all central">
+                                <div class="card">
+                                    <div class="item">
+                                        <img src="{{ URL::asset('img/main/nagoya.jpg')}}" alt="Nagoya">
+                                        <div class="p-inner">
+                                            <h5>Nagoya</h5>
+                                            <div class="cat">Chubu (Central)</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="single-portfolio col-sm-4 all south-central">
-                            <div class="item">
-                                <img src="{{ URL::asset('img/main/osaka.jpg')}}" alt="Osaka">
-                                <div class="p-inner">
-                                    <h4>Osaka</h4>
-                                    <div class="cat">Kinki (South-Central)</div>
+                        <a href="#" class="text-dark btn-modal"value="Kyoto">
+                            <div class="single-portfolio col-sm-4 all south-central">
+                                <div class="card">
+                                    <div class="item">
+                                        <img src="{{ URL::asset('img/main/kyoto.jpg')}}" alt="Kyoto">
+                                        <div class="p-inner">
+                                            <h4>Kyoto</h4>
+                                            <div class="cat">Kinki (South-Central)</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+
+                        <a href="#" class="text-dark btn-modal" value="Osaka">
+                            <div class="single-portfolio col-sm-4 all south-central">
+                                <div class="card">
+                                    <div class="item">
+                                        <img src="{{ URL::asset('img/main/osaka.jpg')}}" alt="Osaka">
+                                        <div class="p-inner">
+                                            <h4>Osaka</h4>
+                                            <div class="cat">Kinki (South-Central)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
                 </div>
