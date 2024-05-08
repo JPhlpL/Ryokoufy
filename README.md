@@ -1,8 +1,4 @@
----
-runme:
-  id: 01HWWP1BM6B7AA7TYC8AA77J5E
-  version: v3
----
+
 
 <p align="center"><a href="https://jphiltech.com/portfolio-dev/ryokoufy" target="_blank"><img src="public/img/logo.png" alt="Build Status"></a></p>
 
