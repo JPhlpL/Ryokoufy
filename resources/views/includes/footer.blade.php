@@ -38,16 +38,25 @@ $('a.btn-modal').click(function(e) {
     e.preventDefault();
     var place = $(this).attr('value');
 
+    // Display loading modal
+    Swal.fire({
+        title: 'Loading...',
+        html: '<i class="fa fa-spinner fa-spin fa-3x"></i>',
+        showConfirmButton: false,
+        allowOutsideClick: false
+    });
+
     $.ajax({
         url: base_path + '/getInfo/' + place,
         type: 'GET',
         success: function(data) {
-            // Display data in a modal
+            // Close loading modal
+            Swal.close();
+
+            // Display main modal
             Swal.fire({
                 title: place,
                 html: `
-
-
                     <ul class="text-left">
                         <li>Geo Data:</li>
                         <li>Latitude: ${data.latitude}</li>
@@ -63,7 +72,7 @@ $('a.btn-modal').click(function(e) {
                         <li>Wind Speed: ${data.wind_speed} m/s </li>
                     </ul>
                 `,
-                imageUrl: "https://unsplash.it/400/200",
+                imageUrl: base_path + '/img/main/' + place + '.jpg',
                 imageWidth: 400,
                 imageHeight: 200,
                 imageAlt: "Custom image"
