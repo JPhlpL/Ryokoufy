@@ -31,17 +31,18 @@
         </header>
         <!-- End Header Area -->
 
+
         <!-- start banner Area -->
         <section class="banner-area relative" id="home">
             <div class="overlay overlay-bg"></div>
             <div class="container">
                 <div class="row fullscreen d-flex align-items-center justify-content-center">
                     <div class="banner-content col-lg-10">
-                        <h5 class="text-uppercase">Be the part of this Wonderful Journey</h5>
+                        <h5 class="text-uppercase">Journey never ends</h5>
                         <h1>
                             <img id="logo" src="img/logo.png" alt="ryokoufy">
                         </h1>
-                        <a title='links' href="#" class="primary-btn text-uppercase">Explore Now</a>
+                        <a title='links' href="#" class="primary-btn text-uppercase" id="explorebtn" >Explore Now</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
 
         <!-- Start portfolio-area Area -->
         <section class="portfolio-area section-gap" id="portfolio">
-            <div class="container">
+            <div class="container" data-tg-tour="You can select on each region wheter you want to filter" data-tg-order="0">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content col-lg-10">
                         <div class="title text-center">
@@ -60,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="filters">
+                <div class="filters" >
                     <ul>
                         <li class="active" data-filter="*">All</li>
                         <li data-filter=".north">Hokkaido (North)</li>
@@ -72,27 +73,15 @@
 
                 <div class="filters-content">
                     <div class="row grid">
-
                         <a title='links' href="#" class="text-dark btn-modal" value="Sapporo">
                             <div class="single-portfolio col-sm-4 all north">
 
-                                <div class="item">
+                                <div class="item" data-tg-tour='Here you can click this for to check the place information and weather update! ' data-tg-order="1">
                                     <img src="{{ URL::asset('img/main/sapporo.jpg') }}" alt="Sapporo">
                                     <div class="p-inner">
                                         <h4>Sapporo
                         </a></h4>
                         <div class="cat">Hokkaido (North)</div>
-                        {{-- <article class="widget">
-                                                <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
-                                                <div class="weatherInfo">
-                                                  <div class="temperature"><span>25&deg;</span></div>
-                                                  <div class="description">
-                                                    <div class="weatherCondition">CLOUDY</div>
-                                                    <div class="place">New York, New York</div>
-                                                  </div>
-                                                </div>
-                                                <div class="date">1st Jan</div>
-                                            </article> --}}
                     </div>
 
                 </div>
