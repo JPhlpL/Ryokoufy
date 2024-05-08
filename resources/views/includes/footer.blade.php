@@ -36,18 +36,22 @@
 <script src="{{ URL::asset('js/sweetalert.js') }}"></script>
 {{-- Sweetalert function --}}
 <script>
-    function tour_app(){
-        const tg = new tourguide.TourGuideClient({
+    let count = 0
+    const tg = new tourguide.TourGuideClient({
             exitOnClickOutside: false
         });
-        tg.addSteps([
-        {
-            title: 'Welcome to our app!',
-            content: 'Greetings Tourists! This is Ryokoufy, your travel tour guide application.',
-            target: 'intro-element', // Replace with the actual element selector
-            placement: 'bottom'
-            }
-        ]);
+
+    function tour_app(tg,count){
+        if(count == 0){
+            tg.addSteps([
+            {
+                title: 'Welcome to our app!',
+                content: 'Greetings Tourists! This is Ryokoufy, your travel tour guide application.',
+                target: 'intro-element', // Replace with the actual element selector
+                placement: 'bottom'
+                }
+            ]);
+        }
         tg.start();
     }
 
@@ -57,13 +61,17 @@
 
     if (isFirstTime) {
     // Only start the tour guide if it's the first time
-        tour_app();
+        tour_app(tg,count);
+        count++;
+        console.log(count)
         localStorage.setItem('hasOpenedBefore', true);
     }
 
     // Add an event listener to the explore button
-    $('#explorebtn').one('click', function(){
-        tour_app();
+    $('#explorebtn').click(function(){
+        tour_app(tg,count);
+        count++;
+        console.log(count)
     });
 
 
