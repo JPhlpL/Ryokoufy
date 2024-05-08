@@ -1,6 +1,6 @@
 
 
-<p align="center"><a href="https://jphiltech.com/portfolio-dev/ryokoufy" target="_blank"><img src="public/img/logo.png" alt="Build Status"></a></p>
+<a href="https://jphiltech.com/portfolio-dev/ryokoufy/public" target="_blank"><p align="center"><img src="public/img/logo.png" alt="Build Status"></p></a>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
