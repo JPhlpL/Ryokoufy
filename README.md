@@ -32,7 +32,7 @@ It is also well strutured application that uses a Laravel for robust backend fra
 
 ### Sample API Testing
 
-<a href="https://packagist.org/packages/laravel/framework"><img height='50' width='800px' src="https://img.shields.io/badge//GET-http://localhost/ryokoufy/public/getInfo/{place}-green" alt="GuzzleHTTP"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img height='50' width='800px' src="https://img.shields.io/badge//GET-http://jphiltech.com/ryokoufy/public/getInfo/{place}-green" alt="GuzzleHTTP"></a>
 
 Limited for Kyoto, Japan, Nagoya, Yokohama, Osaka, Sapporo
 
