@@ -1,6 +1,4 @@
-*.php linguist-detectable=true
-*.scss linguist-detectable=false
-*.css linguist-detectable=false
+*.scss linguist-language=php
 
 * text=auto eol=lf
 
